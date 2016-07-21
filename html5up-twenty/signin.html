@@ -26,19 +26,19 @@
 			<input type="submit" value="Login" onSubmit="myFunction();" />
 		</form> -->
 		<script>
-				function myFunction() {
-					var un = document.loginform.usr.value;
-					var pw = document.loginform.pword.value;
-				<!--var username = "username"; -->
-				<!--var password = "password"; -->
-					if ((un == emmasmith) && (pw == 12345)) {
-							return true;
-					}
-						else{
-							alert("Login Unsuccessfully");
-							return false;
-						}	
+			function myFunction() {
+				var un = document.loginform.usr.value;
+				var pw = document.loginform.pword.value;
+				var emmahawk = "emmahawk"; 
+				var password = "12345";
+				if ((un == emmahawk) && (pw == 12345)) {
+					return true;
 				}
+				else {
+					alert ("Login was unsuccessful.");
+					return false;
+				}
+		  }
 		</script>
 	</head>
 	<body class="register">
@@ -107,8 +107,10 @@
 											</div>
 										</div>
 										<br />
+										<!-- <p><font color="green"> Username: emmahawk <br/>
+											Password: password</font></p> -->
 										<div class="row1">
-											<a target="_blank" href="signup.html" >Haven't signed up yet?</a>										
+											<a target="_blank" href="signup.html" >Haven't signed up yet?</a>	
 										</div>
 									</form>
 								</div>
