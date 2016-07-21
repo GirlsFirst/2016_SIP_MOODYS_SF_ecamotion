@@ -28,27 +28,43 @@
 					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Welcome</a></li>
+							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
 							<li class="submenu">
-								<a href="#">Layouts</a>
+								<a href="#">Activities</a>
 								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li><a href="contact.html">Contact</a></li>
 									<li class="submenu">
-										<a href="#">Submenu</a>
+										<a href="#">Sports</a>
 										<ul>
-											<li><a href="#">Dolore Sed</a></li>
-											<li><a href="#">Consequat</a></li>
-											<li><a href="#">Lorem Magna</a></li>
-											<li><a href="#">Sed Magna</a></li>
-											<li><a href="#">Ipsum Nisl</a></li>
+											<li><a href="#">Basketball</a></li>
+											<li><a href="#">Volleyball</a></li>
+											<li><a href="#">Soccer</a></li>
+											<li><a href="#">Swimming</a></li>
+											<li><a href="#">Hockey</a></li>
 										</ul>
+									</li>
+                                    <li class="submenu">
+										<a href="#">Arts and Theatre</a>
+										<ul>
+											<li><a href="#">Visual Arts</a></li>
+											<li><a href="#">Performing Arts</a></li>
+										</ul>
+									</li>
+                                    <li class="submenu">
+										<a href="#">STEM</a>
+										<ul>
+											<li><a href="#">Science</a></li>
+											<li><a href="#">Technology</a></li>
+											<li><a href="#">Engineering</a></li>
+											<li><a href="#">Math</a></li>
+										</ul>
+									</li>
+                                    <li class="submenu">
+										<a href="#">Volunteer</a>
+
 									</li>
 								</ul>
 							</li>
-							<li><a href="#" class="button special">Logout</a></li>
+							<li><a class="button special" href="index.html" >Logout</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -59,7 +75,6 @@
 					<header class="special container">
 						<span class="icon fa-tablet"></span>
 						<h2>Behold the <strong>Activity</strong></h2>
-						<p>Title</p>
 					</header>
 
 					<!-- One -->
@@ -94,26 +109,31 @@
 												<footer>
 												</footer>
 											</section>
-											<div id="map"></div>
-											<div id="capture"></div>
-												<script>
-														function initMap() {
-															var mapDiv = document.getElementById('map');
-															var map = new google.maps.Map(mapDiv, {
-																center: {lat: 37.7885335, lng: -122.39506870000002},
-																zoom: 12,
-															});
-						
-														}
-												</script>
-												<script async defer
-													src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFiF1xjH0DD0K-d-L9OcgaEZekk33yp9w&callback=initMap">
-												</script>
 											<section>
-												<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 												<header>
 													<h3>Location</h3>
 												</header>
+												<div id="map"></div>
+												<div id="capture"></div>
+													<script>
+															function initMap() {
+															  var myLatLng = {lat: 37.7885335, lng:-122.39506870000002};
+
+															  var map = new google.maps.Map(document.getElementById('map'), {
+																zoom: 13,
+																center: myLatLng
+															  });
+
+															  var marker = new google.maps.Marker({
+																position: myLatLng,
+																map: map,
+																title: 'Hello World!'
+															  });
+															}
+													</script>
+													<script async defer
+														src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFiF1xjH0DD0K-d-L9OcgaEZekk33yp9w&callback=initMap">
+													</script>
 												<p>Information</p>
 												<footer>
 												</footer>
@@ -134,15 +154,14 @@
 						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
 						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<!--<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>-->
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2016 by Emma, Tania, Xiao Lin, Julie, and Remi</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</footer>
-
 		</div>
 
 		<!-- Scripts -->
