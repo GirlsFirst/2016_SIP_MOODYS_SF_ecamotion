@@ -19,6 +19,15 @@
 			height: 300px;
 		  }
 		</style>
+        		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
@@ -83,8 +92,20 @@
 										<div class="content">
 											<section>
 												<a href="#" class="image featured"><img src="images/mixpage.jpg" alt="" /></a>
+                                                <br>
 												<header>
-													<h3>Visual Arts</h3>
+                                                    <h3><strong>Visual Arts</strong></h3>
+                                                    <p>"Want to make your own movies, recordings, and more?
+
+                                                    Check out our upcoming events, or stop by during any of our open hours to get involved. Already have amazing media that you’ve created?
+
+                                                    Share your work with us!"</p>
+                                                    <p>
+                                                    The Mix offers endless opportunities in film and audio production. At the Public 
+                                                    Library, there's an audio booth and film studio as well as free supplies, such as laptops, cameras, and software. 
+                                                    In addition to this, the mix offers free classes and lessons on a variety of topics, ranging from coding to tai chi. 
+                                                    All you need to attend is a library card and a signed waiver.
+                                                    </p>
 												</header>
 												<p> </p>
 											</section>
@@ -97,9 +118,13 @@
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Information</h3>
+													<h3><strong>Information</strong></h3>
 												</header>
-												<p>The Mix is your chance to learn some cutting edge technology, from video production, to audio production, to maker activities like 3D printing, sewing, robotics, crafting, and a whole lot more!</p>
+												<p> Now is your chance to experience cutting edge technology! <strong>The Mix </strong> provides free supplies and opportunities to create audio and visual productions, as well as
+                                                maker activities like 3D printing, sewing, robotics, crafting, and a whole lot more!</p>
+                                                <p>
+												For more info: <a target="_blank" href="http://themixatsfpl.org"/>http://themixatsfpl.org/</a>
+												</p>
                                                 <footer>
 												</footer>
 											</section>
@@ -134,16 +159,22 @@
 													<strong>Phone:</strong> (415) 557-4404
                                                 
                                                     <ul id="category-tabs">
-                                                    <li><i class="icon fa bookmark-o"></i>Bookmark</a>
-                                                    </li>
+                                                    <li style="font-size: 50px;float:left;"> Bookmark </li> 
+                                                    <li style=" float:right;"><a href="javascript:void"><i class="fa fa-bookmark-o fa-3x"></i></a>
+                                                    
+                                                   
+                                                        </li>
                                                     </ul>
-    
-                                                    <script>
+                                                    
+                                                <script type="text/javascript">
+                                                $(document).ready(function(){
                                                 $('#category-tabs li a').click(function(){
                                                     $(this).next('ul').slideToggle('500');
-                                                    $(this).find('i').toggleClass('icon fa-bookmark icon fa-bookmark-o')
+                                                    $(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+                                                });
                                                 });
                                                     </script>
+
                                                 
 												<footer>
 												</footer>
@@ -173,16 +204,6 @@
 
 				</footer>
 		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 			
 	</body>
 </html>
