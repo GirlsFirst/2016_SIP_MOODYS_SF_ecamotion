@@ -88,12 +88,15 @@
 											<section>
 												<a href="#" class="image featured"><img src="images/explopage.jpg" alt="" /></a>
 												<header>
-													<h3>STEM</h3>
+													<h2><strong>STEM</strong></h2>
 												</header>
 												<p>The Exploratorium could not operate without the contributions of more than two hundred active volunteers who contribute their time, ideas, and energy. 
                                                 Their unique talents enable the museum to offer its current level of services to the community.<br/>Volunteers help with a wide range of projects, from exhibit maintenance to administrative tasks, from educational programs to special events. 
-                                                Most volunteer projects begin with one-on-one training with a staff supervisor and then develop into independent work.</p>
+                                                Most volunteer projects begin with one-on-one training with a staff supervisor and then develop into independent work.</p><br/>
+												
+												
 											</section>
+												
 										</div>
 
 								</div>
@@ -103,9 +106,10 @@
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Information</h3>
+													<h2><strong>Information</strong></h2>
 												</header>
 												<p>A volunteer project at the Exploratorium is a marvelous opportunity to participate behind the scenes in this hands-on museum of science, art, and human perception.</p>
+												<p>For more info: <a target="_blank" href="http://www.exploratorium.edu/">http://www.exploratorium.edu/</a></p>
                                                 <footer>
 												</footer>
 											</section>
@@ -117,18 +121,34 @@
 												<div id="capture"></div>
 													<script>
 															function initMap() {
-															  var myLatLng = {lat: 37.7885335, lng:-122.39506870000002};
+															  var myLatLng = {lat: 37.8084876, lng:-122.41187070000001};
 
 															  var map = new google.maps.Map(document.getElementById('map'), {
-																zoom: 13,
+																zoom: 11,
 																center: myLatLng
 															  });
+															  
 
 															  var marker = new google.maps.Marker({
 																position: myLatLng,
 																map: map,
 																title: 'Hello World!'
 															  });
+															  
+															  var contentString = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">15 The Embarcadero, San Francisco, CA 94111</h1>'+
+																  'The Exploratorium'+
+																  '</div>'
+															  var infowindow = new google.maps.InfoWindow({
+																content: contentString
+																});
+
+																marker.addListener('click', function() {
+																infowindow.open(map, marker);
+																});
+															
 															}
 													</script>
 													<script async defer
