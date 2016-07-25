@@ -19,6 +19,16 @@
 			height: 300px;
 		  }
 		</style>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
@@ -28,16 +38,16 @@
 					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
+							<li class="current"><a href="userfeed.html">Welcome, emma</a></li>
 							<li class="submenu">
 								<a href="#">Activities</a>
 								<ul>
 									<li class="submenu">
 										<a href="#">Sports</a>
 										<ul>
-											<li><a href="#">Basketball</a></li>
-											<li><a href="#">Volleyball</a></li>
-											<li><a href="#">Soccer</a></li>
+											<li><a href="basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
 											<li><a href="#">Swimming</a></li>
 											<li><a href="#">Hockey</a></li>
 										</ul>
@@ -45,21 +55,15 @@
                                     <li class="submenu">
 										<a href="#">Arts and Theatre</a>
 										<ul>
-											<li><a href="#">Visual Arts</a></li>
+											<li><a href="Visual arts.html">Visual Arts</a></li>
 											<li><a href="#">Performing Arts</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
-										<a href="#">STEM</a>
-										<ul>
-											<li><a href="#">Science</a></li>
-											<li><a href="#">Technology</a></li>
-											<li><a href="#">Engineering</a></li>
-											<li><a href="#">Math</a></li>
-										</ul>
+										<a href="Stem.html">STEM</a>
 									</li>
                                     <li class="submenu">
-										<a href="#">Volunteer</a>
+										<a href="Volunteer">Volunteer</a>
 
 									</li>
 								</ul>
@@ -88,9 +92,9 @@
 											<section>
 												<a href="#" class="image featured"><img src="images/bbgirl.jpg" alt="" /></a>
 												<header>
-													<h3>Basketball</h3>
+													<h3><strong>Basketball</strong></h3>
 												</header>
-												<p> "Mission Rec have teams for girls from 8th - 11th. Try outs are held in late February/early March and are open to all but typically consist of varsity level players and practices are held twice a week from March-June Tournament schedules are approximately 10 out of the 15 weekends from April-July.If interested in trying out , contact via email wilson.stephens@sfgov.org."</p>
+												<p> Mission Rec have teams for girls from 8th - 11th. Try outs are held in late February/early March and are open to all but typically consist of varsity level players and practices are held twice a week from March-June Tournament schedules are approximately 10 out of the 15 weekends from April-July.If interested in trying out , contact via email wilson.stephens@sfgov.org.</p>
 												
 											</section>
 										</div>
@@ -107,7 +111,7 @@
 												<h3><strong>Information</strong></h3>
 												<footer>
                                                 
-                                                <p>" Founded in 1990 by Bill McDonough, owner of Blue Chip Basketball, the Rebels were established to provide motivated young ladies the opportunity to develop their skills while competing at a challenging level during the spring and summer AAU season.  We endeavour to practice and play hard to prepare our girls for college play."</p>
+                                                <p> Founded in 1990 by Bill McDonough, owner of Blue Chip Basketball, the Rebels were established to provide motivated young ladies the opportunity to develop their skills while competing at a challenging level during the spring and summer AAU season.  We endeavour to practice and play hard to prepare our girls for college play.</p>
 												</footer>
                                                 <br/>
                                                 <p>
@@ -115,7 +119,7 @@
 											</section>
 											<section>
 												<header>
-													<h3>Location</h3>
+													<h3><strong>Location</strong></h3>
 												</header>
 												<div id="map"></div>
 												<div id="capture"></div>
@@ -142,7 +146,23 @@
                                                     <p><strong>Location:</strong> Mission Rec Center  2450 Harrison St. San Francisco, CA <br />
 													<strong>Dates:</strong> Tournaments click <a target="_blank" href="http://mrcbasketball.org/schedule/tournaments">here</a>
 													<strong>Phone:</strong> (415)815-9363
-												
+												<ul id="category-tabs">
+                                                    <li style="font-size: 50px;float:left;"> Bookmark </li> 
+                                                    <li style=" float:right;"><a href="javascript:void"><i class="fa fa-bookmark-o fa-3x"></i></a>
+                                                    
+                                                   
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                <script type="text/javascript">
+                                                $(document).ready(function(){
+                                                $('#category-tabs li a').click(function(){
+                                                    $(this).next('ul').slideToggle('500');
+                                                    $(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+                                                });
+                                                });
+                                                    </script>
+
 												<footer>
 												</footer>
 											</section>
@@ -166,21 +186,13 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; 2016 by Emma, Tania, Xiao Lin, Julie, and Remi</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
+
 
 				</footer>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			
+		
 	</body>
 </html>
