@@ -117,7 +117,7 @@
 												<div id="capture"></div>
 													<script>
 															function initMap() {
-															  var myLatLng = {lat: 37.7885335, lng:-122.39506870000002};
+															  var myLatLng = {lat: 37.743028, lng:-122.481700};
 
 															  var map = new google.maps.Map(document.getElementById('map'), {
 																zoom: 13,
@@ -129,13 +129,28 @@
 																map: map,
 																title: 'Hello World!'
 															  });
+                                                              
+                                                              var contentString = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">San Francisco Youth Soccer </h1>'+
+                                                                  '1434 Taraval at 24th San Francisco, CA 94116 '+
+																  '</div>'
+															  var infowindow = new google.maps.InfoWindow({
+																content: contentString
+																});
+                                                                
+                                                            marker.addListener('click', function() {
+                                                                infowindow.open(map, marker);
+															});
+                                                              
 															}
 													</script>
 													<script async defer
 														src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFiF1xjH0DD0K-d-L9OcgaEZekk33yp9w&callback=initMap">
 													</script>
                                                     <br />
-                                                <p><strong>Location:</strong> SF Youth Soccer,<br/> 1434 Taraval at 24TH <br />San Francisco, CA 94116 <br />
+                                                <p><strong>Location:</strong> SF Youth Soccer,<br/> 1434 Taraval at 24th <br />San Francisco, CA 94116 <br />
 													<strong>Dates:</strong> League Dates Click <a target="_blank" href="http://www.sfyouthsoccer.com/">here</a>
 													<strong>Phone:</strong> (415) 504-8131
                                                 
