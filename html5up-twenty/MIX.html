@@ -35,8 +35,8 @@
 									<li class="submenu">
 										<a href="#">Sports</a>
 										<ul>
-											<li><a href="#">Basketball</a></li>
-											<li><a href="#">Volleyball</a></li>
+											<li><a href="basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
 											<li><a href="#">Soccer</a></li>
 											<li><a href="#">Swimming</a></li>
 											<li><a href="#">Hockey</a></li>
@@ -45,24 +45,20 @@
                                     <li class="submenu">
 										<a href="#">Arts and Theatre</a>
 										<ul>
-											<li><a href="#">Visual Arts</a></li>
+											<li><a href="Visual arts.html">Visual Arts</a></li>
 											<li><a href="#">Performing Arts</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
-										<a href="#">STEM</a>
-										<ul>
-											<li><a href="#">Science</a></li>
-											<li><a href="#">Technology</a></li>
-											<li><a href="#">Engineering</a></li>
-											<li><a href="#">Math</a></li>
-										</ul>
-									</li>
-                                    <li class="submenu">
-										<a href="#">Volunteer</a>
+										<a href="STEM.html">STEM</a>
 
 									</li>
-								</ul>
+                                    <li class="submenu">
+										<a href="Volunteer.html">Volunteer</a>
+
+									</li>
+                                    
+                                    								</ul>
 							</li>
 							<li><a class="button special" href="index.html" >Logout</a></li>
 						</ul>
@@ -88,10 +84,9 @@
 											<section>
 												<a href="#" class="image featured"><img src="images/mixpage.jpg" alt="" /></a>
 												<header>
-													<h3>Theatre</h3>
+													<h3>Visual Arts</h3>
 												</header>
-												<p>1. Assist with ongoing library activities and tasks<br />2.Help library patrons with their basic computer skills<br />3.Plan your own program at the library. Send us a proposal. Once it is approved, work with a librarian  
-                                                on publicity, planning, practice, and, finally, run it at the library. A stipend may be given to the teen performer upon completion of the program.<br />4.Apply to be a Summer Squad Teen Volunteer and help the library’s summer learning program.</p>
+												<p> </p>
 											</section>
 										</div>
 
@@ -104,7 +99,7 @@
 												<header>
 													<h3>Information</h3>
 												</header>
-												<p>Volunteer at Your Local Library<br />There are four types of volunteer opportunities offered throughout the SFPL system.</p>
+												<p>The Mix is your chance to learn some cutting edge technology, from video production, to audio production, to maker activities like 3D printing, sewing, robotics, crafting, and a whole lot more!</p>
                                                 <footer>
 												</footer>
 											</section>
@@ -138,7 +133,17 @@
 													<strong>Dates:</strong> More information click <a target="_blank" href="http://themixatsfpl.org/jobs-and-volunteer">here</a>
 													<strong>Phone:</strong> (415) 557-4404
                                                 
-                                                
+                                                    <ul id="category-tabs">
+                                                    <li><i class="icon fa bookmark-o"></i>Bookmark</a>
+                                                    </li>
+                                                    </ul>
+    
+                                                    <script>
+                                                $('#category-tabs li a').click(function(){
+                                                    $(this).next('ul').slideToggle('500');
+                                                    $(this).find('i').toggleClass('icon fa-bookmark icon fa-bookmark-o')
+                                                });
+                                                    </script>
                                                 
 												<footer>
 												</footer>
