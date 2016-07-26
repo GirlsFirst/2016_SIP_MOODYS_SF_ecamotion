@@ -19,44 +19,54 @@
 			height: 300px;
 		  }
 		</style>
+        		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
+					<h1 id="logo"><a href="">Ecamotion<span> Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
+							<li class="current"><a href="userfeed.html">Welcome, Emma</a></li>
 							<li class="submenu">
 								<a href="#">Activities</a>
 								<ul>
 									<li class="submenu">
 										<a href="#">Sports</a>
 										<ul>
-											<li><a href="#">Basketball</a></li>
-											<li><a href="#">Volleyball</a></li>
-											<li><a href="#">Soccer</a></li>
-											<li><a href="#">Swimming</a></li>
-											<li><a href="#">Hockey</a></li>
+											<li><a href="Basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
+											<li><a href="Swimming.html">Swimming</a></li>
+                                            <li><a href="Hockey.html">Hockey</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
 										<a href="#">Arts and Theatre</a>
 										<ul>
-											<li><a href="#">Visual Arts</a></li>
-											<li><a href="#">Performing Arts</a></li>
+											<li><a href="visualarts.html">Visual Arts</a></li>
+											<li><a href="performingarts.html">Performing Arts</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
 										<a href="#">STEM</a>
-										<ul>
+										<!--<ul>
 											<li><a href="#">Science</a></li>
 											<li><a href="#">Technology</a></li>
 											<li><a href="#">Engineering</a></li>
 											<li><a href="#">Math</a></li>
-										</ul>
+										</ul>-->
 									</li>
                                     <li class="submenu">
 										<a href="#">Volunteer</a>
@@ -64,7 +74,7 @@
 									</li>
 								</ul>
 							</li>
-							<li><a class="button special" href="index.html" >Logout</a></li>
+							<li><a class="button special" href="index.html" >Sign Out</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -73,7 +83,7 @@
 				<article id="main">
 
 					<header class="special container">
-						<span class="icon  fa-paint-brush "></span>
+						<span class="icon fa-flask"></span>
 						<h2> The <strong>Exploratorium</strong></h2>
 					</header>
 
@@ -88,10 +98,10 @@
 											<section>
 												<a href="#" class="image featured"><img src="images/explopage.jpg" alt="" /></a>
 												<header>
-													<h3>STEM</h3>
+													<h3><strong>STEM</strong></h3>
 												</header>
 												<p>"The Exploratorium could not operate without the contributions of more than two hundred active volunteers who contribute their time, ideas, and energy. 
-                                                Their unique talents enable the museum to offer its current level of services to the community.<br/>Volunteers help with a wide range of projects, from exhibit maintenance to administrative tasks, from educational programs to special events. 
+                                                Their unique talents enable the museum to offer its current level of services to the community. Volunteers help with a wide range of projects, from exhibit maintenance to administrative tasks, from educational programs to special events. 
                                                 Most volunteer projects begin with one-on-one training with a staff supervisor and then develop into independent work."</p>
 											</section>
 										</div>
@@ -103,9 +113,12 @@
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Information</h3>
+													<h3><strong>Information</strong></h3>
 												</header>
 												<p>"A volunteer project at the Exploratorium is a marvelous opportunity to participate behind the scenes in this hands-on museum of science, art, and human perception."</p>
+                                                 <p>
+												For more info: <a target="_blank" href="http://www.exploratorium.edu/"/>http://www.exploratorium.edu/</a>
+												</p>
                                                 <footer>
 												</footer>
 											</section>
@@ -139,7 +152,22 @@
 													<strong>Dates:</strong> More information click <a target="_blank" href="http://www.exploratorium.edu/support/volunteer">here</a>
 													<strong>Phone:</strong> (415) 528-4364
                                                 
-                                                
+                                                <ul id="category-tabs">
+                                                    <li style="font-size: 50px;float:left;"> Bookmark </li> 
+                                                    <li style=" float:right;"><a href="javascript:void"><i class="fa fa-bookmark-o fa-3x"></i></a>
+                                                    
+                                                   
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                <script type="text/javascript">
+                                                $(document).ready(function(){
+                                                $('#category-tabs li a').click(function(){
+                                                    $(this).next('ul').slideToggle('500');
+                                                    $(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+                                                });
+                                                });
+                                                    </script>
                                                 
 												<footer>
 												</footer>
@@ -163,22 +191,14 @@
 						<!--<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>-->
 					</ul>
 
-					<ul class="copyright">
-						<li>&copy; 2016 by Emma, Tania, Xiao Lin, Julie, and Remi</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+					
+                    <ul class="copyright">
+                    <li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+
 
 				</footer>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			
 	</body>
 </html>
