@@ -19,25 +19,34 @@
 			height: 300px;
 		  }
 		</style>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
+					<h1 id="logo"><a href="index.html">Ecamotion <span>Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
+							<li class="current"><a href="index.html">Welcome</a></li>
 							<li class="submenu">
 								<a href="#">Activities</a>
 								<ul>
 									<li class="submenu">
 										<a href="#">Sports</a>
 										<ul>
-											<li><a href="#">Basketball</a></li>
-											<li><a href="#">Volleyball</a></li>
-											<li><a href="#">Soccer</a></li>
+											<li><a href="basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
 											<li><a href="#">Swimming</a></li>
 											<li><a href="#">Hockey</a></li>
 										</ul>
@@ -45,26 +54,21 @@
                                     <li class="submenu">
 										<a href="#">Arts and Theatre</a>
 										<ul>
-											<li><a href="#">Visual Arts</a></li>
-											<li><a href="#">Performing Arts</a></li>
+											<li><a href="Visual arts.html">Visual Arts</a></li>
+											<li><a href="performingarts.html">Performing Arts</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
-										<a href="#">STEM</a>
-										<ul>
-											<li><a href="#">Science</a></li>
-											<li><a href="#">Technology</a></li>
-											<li><a href="#">Engineering</a></li>
-											<li><a href="#">Math</a></li>
-										</ul>
-									</li>fa
+										<a href="STEM.html">STEM</a>
+
+									</li>
                                     <li class="submenu">
-										<a href="#">Volunteer</a>
+										<a href="Volunteer.html">Volunteer</a>
 
 									</li>
 								</ul>
 							</li>
-							<li><a class="button special" href="index.html" >Logout</a></li>
+							<li><a href="index.html" class="button special">Logout</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -86,12 +90,12 @@
 									<!-- Content -->
 										<div class="content">
 											<section>
-												<a href="#" class="image featured"><img src="images/sfyspage.jpg" alt="" /></a>
+												<a class="image featured"><img src="images/sfyspage.jpg" alt="" /></a>
 												<header>
 													<h3>SOCCER</h3>
 												</header>
-												<p>"Recreational teams get 1 game and 1 practice a week during the seasons. Also, there is no yearlong commitment to play. A number of recreational teams only play the fall season and then switch to a different sport to play in the spring, while competitive teams must play at least 3 seasons and participate in tournaments</p>
-                                                <p>SF Youth Soccer believes all kids should learn how to lose as well as win. Ideally, teams will play against teams that roughly equal to their own, resulting in a good mix of wins and losses. Losses? Yes, losses give players, and teams, a chance to learn valuable lessons: it stimulates players to work harder in practice to get better; they learn to fight back, during a game, playing from behind; they learn it’s not the end of the world to lose."</p>
+												<p>Recreational teams get 1 game and 1 practice a week during the seasons. Also, there is no yearlong commitment to play. A number of recreational teams only play the fall season and then switch to a different sport to play in the spring, while competitive teams must play at least 3 seasons and participate in tournaments</p>
+                                                <p>SF Youth Soccer believes all kids should learn how to lose as well as win. Ideally, teams will play against teams that roughly equal to their own, resulting in a good mix of wins and losses. Losses? Yes, losses give players, and teams, a chance to learn valuable lessons: it stimulates players to work harder in practice to get better; they learn to fight back, during a game, playing from behind; they learn it’s not the end of the world to lose.</p>
                                                 
 											</section>
 										</div>
@@ -105,7 +109,7 @@
 												<header>
 													<h3>Information</h3>
 												</header>
-												<p>"The SF Youth Soccer Recreational program is underscored by our belief that children learn and enjoy soccer the most when playing against teams of similar ability. We make every effort to group teams into brackets of like skill level and at the younger ages even we-bracket midseason as necessary."</p>
+												<p>The SF Youth Soccer Recreational program is underscored by our belief that children learn and enjoy soccer the most when playing against teams of similar ability. We make every effort to group teams into brackets of like skill level and at the younger ages even we-bracket midseason as necessary.</p>
                                                 <footer>
 												</footer>
 											</section>
@@ -154,7 +158,14 @@
 													<strong>Dates:</strong> League Dates Click <a target="_blank" href="http://www.sfyouthsoccer.com/">here</a>
 													<strong>Phone:</strong> (415) 504-8131
                                                 
-                                                
+                                                 <script type="text/javascript">
+                                                $(document).ready(function(){
+                                                $('#category-tabs li a').click(function(){
+                                                    $(this).next('ul').slideToggle('500');
+                                                    $(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+                                                });
+                                                });
+                                                    </script>
 												<footer>
 												</footer>
 											</section>
@@ -178,21 +189,13 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; 2016 by Emma, Tania, Xiao Lin, Julie, and Remi</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</footer>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		
 			
 	</body>
 </html>
