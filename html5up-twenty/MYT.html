@@ -19,25 +19,34 @@
 			height: 300px;
 		  }
 		</style>
+				<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
+					<h1 id="logo"><a href="index.html">Ecamotion <span>Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
+							<li class="current"><a href="index.html">Welcome,emma</a></li>
 							<li class="submenu">
 								<a href="#">Activities</a>
 								<ul>
 									<li class="submenu">
 										<a href="#">Sports</a>
 										<ul>
-											<li><a href="#">Basketball</a></li>
-											<li><a href="#">Volleyball</a></li>
-											<li><a href="#">Soccer</a></li>
+											<li><a href="basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
 											<li><a href="#">Swimming</a></li>
 											<li><a href="#">Hockey</a></li>
 										</ul>
@@ -45,26 +54,21 @@
                                     <li class="submenu">
 										<a href="#">Arts and Theatre</a>
 										<ul>
-											<li><a href="#">Visual Arts</a></li>
-											<li><a href="#">Performing Arts</a></li>
+											<li><a href="Visual arts.html">Visual Arts</a></li>
+											<li><a href="performingarts.html">Performing Arts</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
-										<a href="#">STEM</a>
-										<ul>
-											<li><a href="#">Science</a></li>
-											<li><a href="#">Technology</a></li>
-											<li><a href="#">Engineering</a></li>
-											<li><a href="#">Math</a></li>
-										</ul>
+										<a href="STEM.html">STEM</a>
+
 									</li>
                                     <li class="submenu">
-										<a href="#">Volunteer</a>
+										<a href="Volunteer.html">Volunteer</a>
 
 									</li>
 								</ul>
 							</li>
-							<li><a class="button special" href="index.html" >Logout</a></li>
+							<li><a href="index.html" class="button special">Logout</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -88,7 +92,7 @@
 											<section>
 												<a href="#" class="image featured"><img src="images/mytpage.jpg" alt="" /></a>
 												<header>
-													<h3>Theatre</h3>
+													<h3><strong>Theatre</strong></h3>
 												</header>
 												<p>"MYT provides youth ages 2-21 with high quality theater arts experience that integrates drama, dance, music and stagecraft. Open to all young performers without audition or regard to financial limitations, MYT produces full-scale original musical productions each year for elementary,  
                                         middle and  high school/college performance ensembles.</p>
@@ -107,10 +111,11 @@
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Information</h3>
+													<h3><strong>Information</strong></h3>
 												</header>
                                                 <p>"The Performance Conservatory will feature a series of two-hour “Master Classes” encompassing different aspects of the theater. Guest artists will include professionals 
                                                 in such areas as playwriting, stage combat, acting styles, script analysis, the audition process, improvisation, movement, music, masks, and stage craft."</p>
+												 <p>For more info: <a target="_blank" href="https://themarsh.org/marsh-youth-theater/">https://themarsh.org/marsh-youth-theater/</a></p>
                                                 <footer>
 												</footer>
 											</section>
@@ -143,6 +148,20 @@
                                                 <p><strong>Location:</strong> The Marsh 1062 Valencia,<br />San Francisco, CA 94110<br />
 												<strong>Dates:</strong> Sign up dates click <a target="_blank" href="https://themarsh.org/myt-fallwinter-classes-2015/">here</a>
 												<strong>Phone:</strong>415.282.3055   
+												
+												<ul id="category-tabs">
+                                                    <li style="font-size: 50px;float:left;"> Bookmark </li> 
+                                                    <li style=" float:right;"><a href="javascript:void"><i class="fa fa-bookmark-o fa-3x"></i></a></li>
+                                                </ul>
+                                                    
+													<script type="text/javascript">
+													$(document).ready(function(){
+													$('#category-tabs li a').click(function(){
+														$(this).next('ul').slideToggle('500');
+														$(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+													});
+													});
+                                                    </script>
 												<footer>
 												</footer>
 											</section>
@@ -166,21 +185,13 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; 2016 by Emma, Tania, Xiao Lin, Julie, and Remi</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</footer>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+
 			
 	</body>
 </html>
