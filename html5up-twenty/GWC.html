@@ -19,34 +19,43 @@
 			height: 300px;
 		  }
 		</style>
+        	<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
+					<h1 id="logo"><a href="">Ecamotion<span> Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
+							<li class="current"><a href="userfeed.html">Welcome, Emma</a></li>
 							<li class="submenu">
 								<a href="#">Activities</a>
 								<ul>
 									<li class="submenu">
 										<a href="#">Sports</a>
 										<ul>
-											<li><a href="#">Basketball</a></li>
-											<li><a href="#">Volleyball</a></li>
-											<li><a href="#">Soccer</a></li>
-											<li><a href="#">Swimming</a></li>
-											<li><a href="#">Hockey</a></li>
+											<li><a href="Basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
+											<li><a href="Swimming.html">Swimming</a></li>
+                                            <li><a href="Hockey.html">Hockey</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
 										<a href="#">Arts and Theatre</a>
 										<ul>
-											<li><a href="#">Visual Arts</a></li>
-											<li><a href="#">Performing Arts</a></li>
+											<li><a href="visualarts.html">Visual Arts</a></li>
+											<li><a href="performingarts.html">Performing Arts</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
@@ -64,7 +73,7 @@
 									</li>
 								</ul>
 							</li>
-							<li><a class="button special" href="index.html" >Logout</a></li>
+							<li><a class="button special" href="index.html" >Sign Out</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -73,8 +82,8 @@
 				<article id="main">
 
 					<header class="special container">
-						<span class="icon fa-flask  "></span>
-						<h2> Girls Who <strong>Code</strong></h2>
+						<span class="icon fa-flask"></span>
+						<h2><strong>Girls Who Code</strong></h2>
 					</header>
 
 					<!-- One -->
@@ -88,7 +97,7 @@
 											<section>
 												<a href="#" class="image featured"><img src="images/gwcpage.jpg" alt="" /></a>
 												<header>
-													<h3>STEM</h3>
+													<h3><strong>STEM</strong></h3>
 												</header>
 												<p>"When girls learn to code, they become change agents in their communities. Whether it’s a game to illustrate the experience of an undocumented immigrant or a website to provide free college prep, 
                                                 our girls create technology that makes the world a better place. Like us, you believed in girls’ unlimited potential. Thanks to your support and contributions, together we’ve inspired thousands of girls to see a future in tech."</p>
@@ -103,9 +112,12 @@
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Information</h3>
+													<h3><strong>Information</strong></h3>
 												</header>
 												<p>"Girls Who Code was founded with a single mission: to close the gender gap in technology. Girls Who Code has gone from 20 girls in New York to 10,000 girls in 42 states."</p>
+                                                <p>
+												For more info: <a target="_blank" href="https://girlswhocode.com/">https://girlswhocode.com/</a>
+												</p>
                                                 <footer>
 												</footer>
 											</section>
@@ -138,7 +150,23 @@
                                                 <p><strong>Search</strong> <br/>To find a local <strong>GWC,</strong> club to particpate in, click <a target="_blank" href="https://girlswhocode.com/locations">here</a>
 													<br/> <strong>OR</strong> <br/>contact <strong>GWC,</strong> click <a target="_blank" href="https://girlswhocode.com/contact-us">here</a>
                                                 
-                                                
+                                                <ul id="category-tabs">
+                                                    <li style="font-size: 50px;float:left;"> Bookmark </li> 
+                                                    <li style=" float:right;"><a href="javascript:void"><i class="fa fa-bookmark-o fa-3x"></i></a>
+                                                    
+                                                   
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                <script type="text/javascript">
+                                                $(document).ready(function(){
+                                                $('#category-tabs li a').click(function(){
+                                                    $(this).next('ul').slideToggle('500');
+                                                    $(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+                                                });
+                                                });
+                                                    </script>
+
                                                 
 												<footer>
 												</footer>
@@ -163,21 +191,14 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; 2016 by Emma, Tania, Xiao Lin, Julie, and Remi</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+                    <li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+
 
 				</footer>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+	
 			
 	</body>
 </html>
