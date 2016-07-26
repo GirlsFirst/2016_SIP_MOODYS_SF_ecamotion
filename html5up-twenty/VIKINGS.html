@@ -19,6 +19,15 @@
 			height: 300px;
 		  }
 		</style>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
@@ -28,16 +37,16 @@
 					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
+							<li class="current"><a href="index.html">Welcome</a></li>
 							<li class="submenu">
 								<a href="#">Activities</a>
 								<ul>
 									<li class="submenu">
 										<a href="#">Sports</a>
 										<ul>
-											<li><a href="#">Basketball</a></li>
-											<li><a href="#">Volleyball</a></li>
-											<li><a href="#">Soccer</a></li>
+											<li><a href="basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
 											<li><a href="#">Swimming</a></li>
 											<li><a href="#">Hockey</a></li>
 										</ul>
@@ -45,26 +54,21 @@
                                     <li class="submenu">
 										<a href="#">Arts and Theatre</a>
 										<ul>
-											<li><a href="#">Visual Arts</a></li>
-											<li><a href="#">Performing Arts</a></li>
+											<li><a href="Visual arts.html">Visual Arts</a></li>
+											<li><a href="performingarts.html">Performing Arts</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
-										<a href="#">STEM</a>
-										<ul>
-											<li><a href="#">Science</a></li>
-											<li><a href="#">Technology</a></li>
-											<li><a href="#">Engineering</a></li>
-											<li><a href="#">Math</a></li>
-										</ul>
-									</li>fa
+										<a href="STEM.html">STEM</a>
+
+									</li>
                                     <li class="submenu">
-										<a href="#">Volunteer</a>
+										<a href="Volunteer.html">Volunteer</a>
 
 									</li>
 								</ul>
 							</li>
-							<li><a class="button special" href="index.html" >Logout</a></li>
+							<li><a href="index.html" class="button special">Logout</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -86,12 +90,12 @@
 									<!-- Content -->
 										<div class="content">
 											<section>
-												<a href="#" class="image featured"><img src="images/vikingpage.jpg" alt="" /></a>
+												<a class="image featured"><img src="images/vikingpage.jpg" alt="" /></a>
 												<header>
 													<h3>SOCCER</h3>
 												</header>
-												<p>"The low player-to-coach ratio enables the coaches to provide continuous attention and individual skills training.
-                                                The camp also provides a variety of group exercises, small-sided games, and full field matches. In addition to this first-class training, every player will receive an official camp shirt, soccer ball, and bag. At the end of the week every player will also get a personal evaluation from the coaching staff."</p>
+												<p>The low player-to-coach ratio enables the coaches to provide continuous attention and individual skills training.
+                                                The camp also provides a variety of group exercises, small-sided games, and full field matches. In addition to this first-class training, every player will receive an official camp shirt, soccer ball, and bag. At the end of the week every player will also get a personal evaluation from the coaching staff</p>
                                                 
 											</section>
 										</div>
@@ -106,8 +110,8 @@
 													<h3>Information</h3>
 												</header>
 												<p>
-"Our coaches ensure that players of every age and ability level will have fun learning the game of soccer.  
- All profits from the San Francisco Vikings Summer Camp support our other program activities and scholarship fund."</p>
+												Our coaches ensure that players of every age and ability level will have fun learning the game of soccer.  
+												 All profits from the San Francisco Vikings Summer Camp support our other program activities and scholarship fund.</p>
                                                 <footer>
 												</footer>
 											</section>
@@ -154,7 +158,15 @@
 													<strong>Dates:</strong> League Dates Click <a target="_blank" href="http://www.sfvsc.org/page/show/291178-register">here</a>
 													<strong>Phone:</strong> (415) 753-3111
                                                 
-                                                
+                                                 
+                                                 <script type="text/javascript">
+                                                $(document).ready(function(){
+                                                $('#category-tabs li a').click(function(){
+                                                    $(this).next('ul').slideToggle('500');
+                                                    $(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+                                                });
+                                                });
+                                                    </script>
 												<footer>
 												</footer>
 											</section>
@@ -178,21 +190,13 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; 2016 by Emma, Tania, Xiao Lin, Julie, and Remi</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</footer>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		
 			
 	</body>
 </html>
