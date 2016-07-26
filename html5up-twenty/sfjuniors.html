@@ -113,7 +113,7 @@
 												</footer>
                                                 <br/>
                                                 <p>
-												For more info: <a target="_blank" href="http://sfjuniors.com/">http://sfjuniors.com/</a>
+												For more info: <a target="_blank" href="http://sfjuniors.com/">http://sfjuniors.com/</a></p>
 											</section>
 											<section>
 												<header>
@@ -331,15 +331,20 @@
                                                     <p><strong>Location:</strong> San Francisco click <a target="_blank" href="http://sfjuniors.com/locations/">here</a><br />
 													<strong>Dates:</strong> Practice Schedule click <a target="_blank" href="http://sfjuniors.com/calendar/">here</a>
 													<strong>Phone:</strong> (415) 674-4399
-												
-												 <script type="text/javascript">
+													
+													<ul id="category-tabs">
+                                                    <li style="font-size: 50px;float:left;"> Bookmark </li> 
+                                                    <li style=" float:right;"><a href="javascript:void"><i class="fa fa-bookmark-o fa-3x"></i></a></li>
+                                                </ul>
+                                                    
+													<script type="text/javascript">
 													$(document).ready(function(){
 													$('#category-tabs li a').click(function(){
 														$(this).next('ul').slideToggle('500');
 														$(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
 													});
 													});
-                                                 </script>
+                                                    </script>
 												<footer>
 												</footer>
 											</section>
