@@ -19,25 +19,34 @@
 			height: 300px;
 		  }
 		</style>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
+					<h1 id="logo"><a href="index.html">Ecamotion <span>Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
+							<li class="current"><a href="userfeed.html">Welcome, emma</a></li>
 							<li class="submenu">
 								<a href="#">Activities</a>
 								<ul>
 									<li class="submenu">
 										<a href="#">Sports</a>
 										<ul>
-											<li><a href="#">Basketball</a></li>
-											<li><a href="#">Volleyball</a></li>
-											<li><a href="#">Soccer</a></li>
+											<li><a href="basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
 											<li><a href="#">Swimming</a></li>
 											<li><a href="#">Hockey</a></li>
 										</ul>
@@ -45,21 +54,16 @@
                                     <li class="submenu">
 										<a href="#">Arts and Theatre</a>
 										<ul>
-											<li><a href="#">Visual Arts</a></li>
+											<li><a href="Visual arts.html">Visual Arts</a></li>
 											<li><a href="#">Performing Arts</a></li>
 										</ul>
 									</li>
                                     <li class="submenu">
-										<a href="#">STEM</a>
-										<ul>
-											<li><a href="#">Science</a></li>
-											<li><a href="#">Technology</a></li>
-											<li><a href="#">Engineering</a></li>
-											<li><a href="#">Math</a></li>
-										</ul>
+										<a href="STEM.html">STEM</a>
+
 									</li>
                                     <li class="submenu">
-										<a href="#">Volunteer</a>
+										<a href="Volunteer.html">Volunteer</a>
 
 									</li>
 								</ul>
@@ -86,18 +90,17 @@
 									<!-- Content -->
 										<div class="content">
 											<section>
-												<a href="#" class="image featured"><img src="images/heyu.jpeg" alt="" /></a>
+												<a class="image featured"><img src="images/heyu.jpeg" alt="" /></a>
 												<header>
-													<h3>Volleyball</h3>
+													<h3><strong>Volleyball</strong></h3>
 												</header>
-												
                                                 <p>" This is a 5-game regular season and the top 4 teams will advance to a single elimination post season (playoffs and championships. Winners will receive commemorative championship T-shirt. The rules of the co ed high school volleyball league are : 
-<br>-National Federation of State High School Association (NFHS) rules apply.
-<br>-6 v. 6 full-court games
-<br>-Best of three game matches
-<br>-No participation rule. No continuous rotation. Free substitution.
-<br>-One officials per game and 2 lines people
-<br>-Teams will receive reversible jerseys as part of their entry fee."</br> </p>
+													<br>-National Federation of State High School Association (NFHS) rules apply.
+													<br>-6 v. 6 full-court games
+													<br>-Best of three game matches
+													<br>-No participation rule. No continuous rotation. Free substitution.
+													<br>-One officials per game and 2 lines people
+													<br>-Teams will receive reversible jerseys as part of their entry fee."</br> </p>
 											</section>
 										</div>
 
@@ -111,8 +114,7 @@
 							
 												</header>
 												<h3><strong>Information</strong></h3>
-												<footer>
-                                                
+												<footer> 
                                                <p> "All high school aged boys/girls in 9th - 12th grade (scheduled to graduate from high school between 2015 and 2018). Players who participate on their school's varsity team within the same school year of this league are not eligible.Teams should have a minimum of 8 players. No maximum. The fee is $85 per participant, whether a captain or a player."</p>
 												</footer>
                                                 <br/>
@@ -169,7 +171,14 @@
                                                     <p><strong>Location:</strong> 286 Ashton Ave. </br> San Francisco, CA 94112</br>
 													<strong>Dates:</strong> Practice Schedule click <a target="_blank" href="http://athletics.cccyo.org/schedule/?countyID=1&commonSport=291">here</a>
 													
-												
+												<script type="text/javascript">
+													$(document).ready(function(){
+													$('#category-tabs li a').click(function(){
+														$(this).next('ul').slideToggle('500');
+														$(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+													});
+													});
+                                                 </script>
 												<footer>
 												</footer>
 											</section>
@@ -193,21 +202,13 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; 2016 by Emma, Tania, Xiao Lin, Julie, and Remi</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</footer>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		
 			
 	</body>
 </html>
