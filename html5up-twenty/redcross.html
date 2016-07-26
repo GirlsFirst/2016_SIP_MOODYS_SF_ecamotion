@@ -19,13 +19,22 @@
 			height: 300px;
 		  }
 		</style>
+        <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
+					<h1 id="logo"><a=>Ecamotion<span>Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
 							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
@@ -91,7 +100,7 @@
 												Its purpose is to protect life and health and to ensure respect for the human being. It promotes mutual understanding, friendship, cooperation and lasting peace amongst all peoples."
 												</p>
 												<p>The Red Cross is voluntary a relief movement and not desire gains.
-												The organization is a world wide institution available to anyone and have equal status and share equal responsibilities and duties in helping each other".
+												The organization is a world wide institution available to anyone and have equal status and share equal responsibilities and duties in helping each other.
 												</p>
 											</section>
 										</div>
@@ -156,6 +165,24 @@
 													<p><strong>Location:</strong>569 Terry A Francois Blvd, San Francisco, CA 94158<br />
 													<strong>Dates:</strong> Sign up for a  <a target="_blank" href="http://www.redcross.org/mo2s">shift</a><br/>
 													<strong>Phone:</strong> (415) 371-1740
+                                                    
+                                                    <ul id="category-tabs">
+                                                    <li style="font-size: 50px;float:left;"> Bookmark </li> 
+                                                    <li style=" float:right;"><a href="javascript:void"><i class="fa fa-bookmark-o fa-3x"></i></a>
+                                                    
+                                                   
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                <script type="text/javascript">
+                                                $(document).ready(function(){
+                                                $('#category-tabs li a').click(function(){
+                                                    $(this).next('ul').slideToggle('500');
+                                                    $(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+                                                });
+                                                });
+                                                    </script>
+
 												</footer>
 											</section>
 										</div>
@@ -177,10 +204,9 @@
 						<!--<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>-->
 					</ul>
 
-					<ul class="copyright">
-						<li>&copy; 2016 by Emma, Julie, Remi, Tania, and Xiao Lin</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
+                    <ul class="copyright">
+<li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
 				</footer>
 		</div>
 
