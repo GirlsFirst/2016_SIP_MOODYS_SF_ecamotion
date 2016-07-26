@@ -19,13 +19,22 @@
 			height: 300px;
 		  }
 		</style>
+            <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.dropotron.min.js"></script>
+                <script src="assets/js/jquery.scrolly.min.js"></script>
+                <script src="assets/js/jquery.scrollgress.min.js"></script>
+                <script src="assets/js/skel.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+                <script src="assets/js/main.js"></script>
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Ecamotion<span>Empowering The Future</span></a></h1>
+					<h1 id="logo"><a=>Ecamotion<span>Empowering The Future</span></a></h1>
 					<nav id="nav">
 						<ul>
 							<li class="current"><a href="userfeed.html">Welcome, emma!</a></li>
@@ -35,13 +44,14 @@
                                 <li class="submenu">
 										<a href="#">Sports</a>
 										<ul>
-											<li><a href="basketball.html">Basketball</a></li>
+											<li><a href="Basketball.html">Basketball</a></li>
 											<li><a href="Volleyball.html">Volleyball</a></li>
-											<li><a href="#">Soccer</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
 											<li><a href="#">Swimming</a></li>
 											<li><a href="#">Hockey</a></li>
 										</ul>
-									</li>
+
+                                </li>
                                     <li class="submenu">
 										<a href="#">Arts and Theatre</a>
 										<ul>
@@ -55,6 +65,7 @@
 									</li>
                                     <li class="submenu">
 										<a href="Volunteer.html">Volunteer</a>
+
 
 									</li>
 								</ul>
@@ -85,13 +96,13 @@
 												<header>
 													<h2><strong>Volunteer</strong></h2>
 												</header>
-												<p>"Allows people from all ages to help around the zoo from teaching children to gardening.
+												<p>Allows people from all ages to help around the zoo from teaching children to gardening.
 												Everyone must attend a mandatory orientation and training. 
 												Programs vary depending on the age groups.
 												Must be 18 years old or older for adult volunteers and attend a volunteer orientation and pass a background check. </p>
 												<p>Volunteering at the San Francisco Zoo can be a fun, educational and rewarding experience.
 												Volunteers support our mission by connecting guests to wildlife through informative talks, biofact presentations, and school tours.
-												There are many volunteer opportunities in the zoo depending on your interest and age."
+												There are many volunteer opportunities in the zoo depending on your interest and age.
 												</p>
 											</section>
 										</div>
@@ -105,8 +116,8 @@
 												<header>
 													<h2><strong>Information</strong></h2>
 												</header>
-												<p>"The Zoo supports conserving the future nature and animals. 
-												They have popular summer and year round volunteer events that are designed to be fun and educating while developing life styles."</p>
+												<p>The Zoo supports conserving the future nature and animals. 
+												They have popular summer and year round volunteer events that are designed to be fun and educating while developing life styles </p>
 												<br/>
 												<p>For more info: <a target="_blank" href="http://www.sfzoo.org/learn/volunteer.htm">http://www.sfzoo.org/learn/volunteer.htm</a>
 												<footer>
@@ -141,6 +152,24 @@
 													<strong>Dates:</strong>Varies depending on Volunteer <a target="_blank" href="http://www.sfzoo.org/learn/volunteer.htm">group.</a>
 													<br/>
 													<strong>Phone:</strong> (415) 753-7080
+                                                    
+                                                    <ul id="category-tabs">
+                                                    <li style="font-size: 50px;float:left;"> Bookmark </li> 
+                                                    <li style=" float:right;"><a href="javascript:void"><i class="fa fa-bookmark-o fa-3x"></i></a>
+                                                    
+                                                   
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                <script type="text/javascript">
+                                                $(document).ready(function(){
+                                                $('#category-tabs li a').click(function(){
+                                                    $(this).next('ul').slideToggle('500');
+                                                    $(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+                                                });
+                                                });
+                                                    </script>
+
 													</p>
 												<footer>
 												</footer>
@@ -164,22 +193,18 @@
 						<!--<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>-->
 					</ul>
 
-					<ul class="copyright">
-						<li>&copy; 2016 by Emma, Julie, Remi, Tania, and Xiao Lin</li><li>Design courtesy of <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+
+                    <ul class="copyright">
+                    <li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
+                                        </ul>
+
+
+
 
 				</footer>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		
 			
 	</body>
 </html>
